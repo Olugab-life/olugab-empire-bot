@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: olugab-empire-bot
+    runtime: python
+    buildCommand: ""
+    startCommand: python olugab_bot.py
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
